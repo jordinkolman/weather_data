@@ -19,7 +19,7 @@ pd.set_option('display.expand_frame_repr', False)
 #connect to and query weather database
 conn = sqlite3.connect(dbFile)
 #Create SQL command
-selectCmd = ' SELECT * FROM observations ORDER BY timestamp; '
+selectCmd = ' SELECT MIN(temperature), MAX(temperature) FROM observations; '
 
 #print out the query
 result = pd.read_sql_query(selectCmd, conn)
