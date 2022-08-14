@@ -11,7 +11,7 @@ def convertCtoF(tempC):
 
 #file names for database and output file
 dbFile = 'weather.db'
-output_file_name = 'formatdata.csv'
+output_file_name = 'formatdata2.csv'
 
 #connect to and query weather database 
 dbFile = 'weather.db'
